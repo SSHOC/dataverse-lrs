@@ -4,7 +4,7 @@
 
 A collection of web applications that conform to the Dataverse external tools interface, makes the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages (left). It also use previewers app for embedded display on Datafile pages (right).
 
-The used previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu).
+The previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu).
 
 #### Curl commands to configure and run web applications with a Dataverse instance:
 
