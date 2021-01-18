@@ -16,7 +16,6 @@
 	var cType="text%2Fplain";
 	queryParams = new URLSearchParams(window.location.search.substring(1));
 	lRSUrl="https://switchboard.clarin.eu/#/dataverse/"+encodeURIComponent(queryParams.get("siteUrl") + "/api/access/datafile/"+ queryParams.get("fileid")+ "?gbrecs=false" )+"/"+cType+"/en";
-	//alert(lRSUrl);
 	$(function() {$(location).attr('href',lRSUrl);}); 
 </script>
 </body>

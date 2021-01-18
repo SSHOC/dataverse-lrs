@@ -8,7 +8,7 @@ The previewers are based on those originally developed by the  [Qualitative Data
 
 #### Curl commands to configure and run web applications with a Dataverse instance:
 
-Using the *curl* commands below it should be possible to run the external applications on a Dataverse instance:
+Using the *curl* commands below it should be possible to install and run the external applications on a Dataverse instance:
 
 -- text/plain previewer
 
