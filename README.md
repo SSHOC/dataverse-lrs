@@ -21,7 +21,7 @@ The current release has been tested with Dataverse v5.11+, however it should wor
 
 #### Curl commands to configure and run web applications with a Dataverse instance:
 
-Using the *curl* commands below it should be possible to install and run the dataverse-lrs web app as external applications on a Dataverse instance:
+Using the *curl* commands below it should be possible to install and run the dataverse-lrs files as external applications on a Dataverse instance:
 
 -- text/plain previewer
 
