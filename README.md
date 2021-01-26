@@ -1,14 +1,27 @@
 # dataverse-lrs
 
-### Webapp integrating Dataverse with Language Resource Switchboard.
+### Integrating Dataverse with Language Resource Switchboard.
 
-A collection of web applications that conform to the Dataverse external tools interface, makes the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages (left). It also use previewers app for embedded display on Datafile pages (right).
+This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages (left). Some of these files also implements data previewer apps for embedded display on Datafile pages (right), these previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu).
 
-The previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu).
+
+#### Installation
+
+The files can be installed on a Dataverse instance by executing the curl command(s) below to register them with the local Dataverse instance. In alternative the code can be downloaded and used locally. 
+
+In the current release there is one file for each mime type. 
+
+#### Known limitations
+
+To send a protected file to the Switchboard or to preview it, the permission to access the dataset version containing the file is required, this means that a valid API Token must be used. Instead sending/viewing public content does not require an API Token. Files in the current release *do not allow* to send to LRS or to preview protected files, this feature will be implemented in next releases.
+
+The current release has been tested with Dataverse v5.11+, however it should work also with Dataverse releases v4.12+.
+
+*This is an in progress activity, code may change and may be not stable all the time.* 
 
 #### Curl commands to configure and run web applications with a Dataverse instance:
 
-Using the *curl* commands below it should be possible to install and run the external applications on a Dataverse instance:
+Using the *curl* commands below it should be possible to install and run the dataverse-lrs web app as external applications on a Dataverse instance:
 
 -- text/plain previewer
 
