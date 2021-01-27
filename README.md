@@ -13,7 +13,7 @@ In the current release there is one file for each mime type, each file can be in
 
 #### Known limitations
 
-Files in the current release *do not allow* to send to LRS or to preview restricted content (i.e. non public files). To send a  non public file to the Switchboard or to preview it, the permission to access the dataset version containing the file is required, this means that a valid API Token must be used. Instead sending/viewing public content does not require an API Token. 
+Files in the current release *do not allow* to send to LRS or to preview restricted content (i.e. non public files). To send a  non public file to the Switchboard or to preview it, the permission to access the dataset version containing the file would be required, technically speaking this means that a valid API Token should be used. Instead sending/viewing public content does not require an API Token. 
 The decision to implement the processing of restricted content depends on the security policy that will be adopted.
 
 The current release has been tested with Dataverse v5.11+, however it should work also with Dataverse releases v4.12+.
