@@ -7,13 +7,14 @@ This repository contains a collection of files that are built according to the [
 
 #### Installation
 
-The files can be installed on a Dataverse instance by executing the curl command(s) below to register them with the local Dataverse instance. In alternative the code can be downloaded and used locally. 
+The files can be installed on a Dataverse instance by executing the curl command(s) below to register them with the local Dataverse instance. In alternative the code can be downloaded and used locally. Detailed instructions for a local installation can be found at the [Dataverse Projcet site](https://guides.dataverse.org/en/latest/admin/external-tools.html#). 
 
-In the current release there is one file for each mime type. 
+In the current release there is one file for each mime type, each file can be installed independently from others. 
 
 #### Known limitations
 
-To send a protected file to the Switchboard or to preview it, the permission to access the dataset version containing the file is required, this means that a valid API Token must be used. Instead sending/viewing public content does not require an API Token. Files in the current release *do not allow* to send to LRS or to preview protected files, this feature will be implemented in next releases.
+Files in the current release *do not allow* to send to LRS or to preview restricted content (i.e. non public files). To send a  non public file to the Switchboard or to preview it, the permission to access the dataset version containing the file is required, this means that a valid API Token must be used. Instead sending/viewing public content does not require an API Token. 
+The decision to implement the processing of restricted content depends on the security policy that will be adopted.
 
 The current release has been tested with Dataverse v5.11+, however it should work also with Dataverse releases v4.12+.
 
