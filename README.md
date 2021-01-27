@@ -18,7 +18,7 @@ The decision to implement the processing of restricted content depends on the se
 
 The current release has been tested with Dataverse v5.11+, however it should work also with Dataverse releases v4.12+.
 
-*This is an in progress activity, code may change and may be not stable all the time.* 
+*This is an in progress activity, code may change and may not be stable all the time.* 
 
 #### Curl commands to configure and run web applications with a Dataverse instance:
 
