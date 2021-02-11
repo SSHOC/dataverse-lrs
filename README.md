@@ -16,7 +16,7 @@ In this release there is one file for each mime type, each file can be installed
 Files in the current release *do not allow* to send to LRS or to preview restricted content (i.e. non public files). To send a  non public file to the Switchboard or to preview it, the permission to access the dataset version containing the file would be required, technically speaking this means that a valid API Token should be used. Instead sending/viewing public content does not require an API Token. 
 The decision to implement the processing of restricted content depends on the security policy that will be adopted.  
 
-The *application/geo+json* mime type is not automatically recognized by Dataverse when uploading a GeoJSON file, to enable the previewer the correct mime type must be manually set the file.
+The *application/geo+json* mime type is not automatically recognized by Dataverse when uploading a GeoJSON file, to associate the GeoJSON previewer to the file the correct mime type must be manually set in the correspondent metadata property of the file.
 
 The current release has been tested with Dataverse v5.11+, however it should work also with Dataverse releases v4.12+.
 
