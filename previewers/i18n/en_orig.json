@@ -13,6 +13,7 @@
 	"pdfPreviewText": "PDF Preview",
 	"spreadsheetViewerText": "Spreadsheet Viewer",
 	"textPreviewText": "Text Preview",
+	"geoJSONPreviewText": "GeoJSON Preview",
 	"videoPreviewText": "Video Preview",
 	"prev": "Previous",
 	"next": "Next",

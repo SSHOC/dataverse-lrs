@@ -13,6 +13,7 @@
 	"pdfPreviewText": "SSHOC Previsualización de pdf",
 	"spreadsheetViewerText": "SSHOC Visor de hojas de cálculo",
 	"textPreviewText": "Previsualización de texto",
+	"geoJSONPreviewText": "GeoJSON Preview",
 	"videoPreviewText": "Previsualización de vídeo",
 	"prev": "Anterior",
 	"next": "Siguiente",

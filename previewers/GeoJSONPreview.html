@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/xss.js"></script>
+<script src="js/obsmodule.js" type="module" ></script>
+<script type="text/javascript" src="js/geojson.js"></script>
+<script type="text/javascript" src="js/retriever.js"></script>
+<script src="lib/jquery.i18n.js"></script>
+<script src="lib/jquery.i18n.messagestore.js"></script>
+<script src="lib/jquery.i18n.language.js"></script>
+<!-- <script type="text/javascript" src="js/retriever.js"></script> -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous"><link type="text/css" rel="stylesheet" href="/previewers/css/preview.css"/>
+<link type="text/css" rel="stylesheet" href="css/preview.css"/>
+</head>
+<body class="container">
+<img id='logo'></img>
+<H1 class="page-title geoJSONPreviewText">SSHOC GeoJSON Viewer
+</H1>
+<script>
+	var cType="application%2fgeo+json";
+	queryParams = new URLSearchParams(window.location.search.substring(1));
+	//var resURL=encodeURIComponent(queryParams.get("siteUrl") + "/api/access/datafile/"+ queryParams.get("fileid"));
+	var resURL=queryParams.get("siteUrl") + "/api/access/datafile/"+ queryParams.get("fileid");
+	
+</script>
+<!-- 
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/440e219b3fd45a99.js?v=3";
+</script>
+ -->
+ 
+<div class='preview-container'>
+<div class='preview-header'></div>
+<div class='preview'>
+
+<div id="observablehq-243ecdae"></div>
+<p>Credit: <a href="https://observablehq.com/d/440e219b3fd45a99">GeoJSON Viewer by cesare concordia</a></p>
+
+
+
+</body>
+<!-- 
+<link rel="stylesheet" href="https://weblicht.sfs.uni-tuebingen.de/switchboard-test/popup/switchboardpopup.css"/>
+<script src="https://weblicht.sfs.uni-tuebingen.de/switchboard-test/popup/switchboardpopup.js"></script>
+<script>
+showSwitchboardPopupOnSelection({}, {})
+</script>
+ -->
+ 
+<style>
+:root {
+  --syntax_normal: #1b1e23;
+  --syntax_comment: #a9b0bc;
+  --syntax_number: #20a5ba;
+  --syntax_keyword: #c30771;
+  --syntax_atom: #10a778;
+  --syntax_string: #008ec4;
+  --syntax_error: #ffbedc;
+  --syntax_unknown_variable: #838383;
+  --syntax_known_variable: #005f87;
+  --syntax_matchbracket: #20bbfc;
+  --syntax_key: #6636b4;
+  --mono_fonts: 82%/1.5 Menlo, Consolas, monospace;
+}
+
+.observablehq--expanded,
+.observablehq--collapsed,
+.observablehq--function,
+.observablehq--import,
+.observablehq--string:before,
+.observablehq--string:after,
+.observablehq--gray {
+  color: var(--syntax_normal);
+}
+
+.observablehq--collapsed,
+.observablehq--inspect a {
+  cursor: pointer;
+}
+
+.observablehq--field {
+  text-indent: -1em;
+  margin-left: 3em;
+}
+
+.observablehq--empty {
+  color: var(--syntax_comment);
+  visibility: hidden;
+}
+
+.observablehq--keyword,
+.observablehq--blue {
+  color: #3182bd;
+  visibility: hidden;
+}
+
+.observablehq--forbidden,
+.observablehq--pink {
+  color: #e377c2;
+}
+
+.observablehq--orange {
+  color: #e6550d;
+}
+
+.observablehq--null,
+.observablehq--undefined,
+.observablehq--boolean {
+  color: var(--syntax_atom);
+  visibility: hidden;
+}
+
+.observablehq--number,
+.observablehq--bigint,
+.observablehq--date,
+.observablehq--regexp,
+.observablehq--symbol,
+.observablehq--green {
+  color: var(--syntax_number);
+  visibility: hidden;
+}
+
+.observablehq--index,
+.observablehq--key {
+  color: var(--syntax_key);
+  visibility: hidden;
+}
+
+.observablehq--prototype-key {
+  color: #aaa;
+  visibility: hidden;
+}
+
+.observablehq--empty {
+  font-style: oblique;
+  visibility: hidden;
+}
+
+.observablehq--string,
+.observablehq--purple {
+  color: var(--syntax_string);
+  visibility: hidden;
+}
+
+.observablehq--error,
+.observablehq--red {
+  color: #e7040f;
+  visibility: hidden;
+}
+
+.observablehq--inspect {
+  font: var(--mono_fonts);
+  overflow-x: auto;
+  display: block;
+  white-space: pre;
+  visibility: hidden;
+}
+
+.observablehq--error .observablehq--inspect {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+</style>
+</html>
