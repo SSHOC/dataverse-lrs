@@ -7,7 +7,7 @@ This repository contains a collection of files that are built according to the [
 
 #### Installation
 
-The files can be installed on a Dataverse instance by executing the curl command(s) below to register them with the local Dataverse instance. In alternative the code can be downloaded and used locally. Detailed instructions for a local installation can be found at the [Dataverse Projcet site](https://guides.dataverse.org/en/latest/admin/external-tools.html#). 
+The files can be installed on a Dataverse instance by executing the curl command(s) below to register them with the local Dataverse instance. In alternative the code can be downloaded and used locally. Detailed instructions for a local installation can be found at the [Dataverse Project site](https://guides.dataverse.org/en/latest/admin/external-tools.html#). 
 
 In this release there is one file for each mime type, each file can be installed independently from others. 
 
