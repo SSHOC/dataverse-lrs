@@ -1,9 +1,7 @@
 # dataverse-lrs
 
-### Integrating Dataverse with the Language Resource Switchboard.
-
-This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages . Some of these files also implements data previewer apps for embedded display on Datafile pages: the *Text* and *PDF* previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu), the *GeoJSON previewer* is a basic, experimental, viewer for GeoJSON files developed using the [d3.js](https://d3js.org) library.
-
+### Integrating Dataverse with the Clarin Resource Switchboard.
+This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages (left). Some of these files also implements data previewer apps for embedded display on Datafile pages (right): the *Text* and *PDF* previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu), the *GeoJSON previewer* is a basic, experimental, viewer for GeoJSON files developed using the [d3.js](https://d3js.org) library.
 
 #### Installation
 
@@ -13,7 +11,7 @@ In this release there is one file for each mime type, each file can be installed
 
 #### Known limitations
 
-Files in the current release *do not allow* to send to LRS or to preview restricted content (i.e. non public files). To send a  non public file to the Switchboard or to preview it, the permission to access the dataset version containing the file would be required, technically speaking this means that a valid API Token should be used. Instead sending/viewing public content does not require an API Token. 
+Files in the current release *do not allow* to send to LRS or to preview restricted content (i.e. non public files). To send a  non public file to the Resource Switchboard or to preview it, the permission to access the dataset version containing the file would be required, technically speaking this means that a valid API Token should be used. Instead sending/viewing public content does not require an API Token. 
 The decision to implement the processing of restricted content depends on the security policy that will be adopted.  
 
 The *application/geo+json* mime type is not automatically recognized by Dataverse when uploading a GeoJSON file, to associate the GeoJSON previewer to the file the correct mime type must be manually set in the correspondent metadata property of the file.
@@ -22,7 +20,7 @@ The current release has been tested with Dataverse v5.11+, however it should wor
 
 *Note: this is an in progress activity, code may change and may not be stable all the time.* 
 
-#### Curl commands to configure and run web applications with a Dataverse instance:
+#### Curl commands to install and run Resource Switchboard integration web apps with a Dataverse instance:
 
 Using the *curl* commands below it should be possible to install and run the dataverse-lrs files as external applications on a Dataverse instance:
 
