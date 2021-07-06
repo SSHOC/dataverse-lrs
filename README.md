@@ -2,12 +2,12 @@
 
 ### Integrating Dataverse with the Language Resource Switchboard.
 
-This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages (left). Some of these files also implements data previewer apps for embedded display on Datafile pages (right): the *Text* and *PDF* previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu), the *GeoJSON previewer* is a basic, experimental, viewer for GeoJSON files developed using the [d3.js](https://d3js.org) library.
+This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages . Some of these files also implements data previewer apps for embedded display on Datafile pages: the *Text* and *PDF* previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu), the *GeoJSON previewer* is a basic, experimental, viewer for GeoJSON files developed using the [d3.js](https://d3js.org) library.
 
 
 #### Installation
 
-The files can be installed on a Dataverse instance by executing the curl command(s) below to register them with the local Dataverse instance. In alternative the code can be downloaded and used locally. Detailed instructions for a local installation can be found at the [Dataverse Project site](https://guides.dataverse.org/en/latest/admin/external-tools.html#). 
+The files can be installed on a Dataverse instance by executing the curl command(s) below to register them with the Dataverse instance. In alternative the code can be downloaded and used locally. Detailed instructions for a local installation can be found at the [Dataverse Project site](https://guides.dataverse.org/en/latest/admin/external-tools.html#). 
 
 In this release there is one file for each mime type, each file can be installed independently from others. 
 
@@ -20,7 +20,7 @@ The *application/geo+json* mime type is not automatically recognized by Datavers
 
 The current release has been tested with Dataverse v5.11+, however it should work also with Dataverse releases v4.12+.
 
-*This is an in progress activity, code may change and may not be stable all the time.* 
+*Note: this is an in progress activity, code may change and may not be stable all the time.* 
 
 #### Curl commands to configure and run web applications with a Dataverse instance:
 
