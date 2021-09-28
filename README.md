@@ -1,7 +1,7 @@
 # dataverse-lrs
 
-### Integrating Dataverse with the Clarin Resource Switchboard.
-This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) (LRS) available as an integrated external tool for Dataverse platforms.
+### Integrating Dataverse with the CLARIN Language Resource Switchboard.
+This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the CLARIN [Language Resource Switchboard](https://switchboard.clarin.eu) (LRS) available as an integrated external tool for Dataverse platforms.
 The integration has been implemented at two levels:
 <ul>
   <li>Data object level: a user that browses the Dataverse repositories, can select a specific file in a dataverse and invoke the Switchboard from the Dataverse UI by selecting the option in the ‘Explore’ icon on the right of a file name, the file is then automatically uploaded to the LRS, along with the mime type information, and the LRS UI is opened on a new web page.</li> 
