@@ -1,7 +1,15 @@
 # dataverse-lrs
 
 ### Integrating Dataverse with the Clarin Resource Switchboard.
-This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Resource Switchboard](https://switchboard.clarin.eu) available through the external tools button on Dataset pages (left). Some of the files also implement data previewer apps for embedded display on Datafile pages (right): the *Text* and *PDF* previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu), the *GeoJSON previewer* is a basic, experimental, viewer for GeoJSON files developed using the [d3.js](https://d3js.org) library.
+This repository contains a collection of files that are built according to the [Dataverse external tools interface](https://guides.dataverse.org/en/latest/admin/external-tools.html) in order to make the Clarin [Language Resource Switchboard](https://switchboard.clarin.eu) (LRS) available as an integrated external tool for Dataverse platforms.
+The integration has been implemented at two levels:
+<ul>
+  <li>Data object level: a user that browses the Dataverse repositories, can select a specific file in a dataverse and invoke the Switchboard from the Dataverse UI by selecting the option in the ‘Explore’ icon on the right of a file name, the file is then automatically uploaded to the LRS, along with the mime type information, and the LRS UI is opened on a new web page.</li> 
+<li>Application viewer level: in Dataverse it is possible to pre-view text and pdf files by invoking specific viewers, the dataverse-lrs component enables a user to invoke text processing and dictionary lookup functionality offered by services integrated in the LRS from the UI of the viewer. When a user selects a text fragment in the Dataverse previewer,  the Switchboard pop-up menu is shown, if the selection consists of up to 3 words, the tools presented to the user are dictionaries, gazetteers, encyclopedias and other reference tools that could provide information on the selected words.</li>
+ </ul>
+  
+
+The *Text* and *PDF* previewers are based on those originally developed by the  [Qualitative Data Repository](https://qdr.syr.edu), the *GeoJSON previewer* is a basic, experimental, viewer for GeoJSON files developed using the [d3.js](https://d3js.org) library.
 
 #### Installation
 
